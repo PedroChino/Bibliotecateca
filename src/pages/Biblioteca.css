@@ -54,9 +54,10 @@
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
   }
   
+  /* Texto do resumo */
   .livro-card .resumo {
     position: absolute;
-    top: 0;
+    bottom: 0;
     left: 0;
     width: 100%;
     height: 100%;
@@ -66,13 +67,55 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+    font-size: 1rem;
+    padding: 1rem;
+    box-sizing: border-box;
+    border-radius: 8px;
     opacity: 0;
     transition: opacity 0.3s ease;
-    border-radius: 8px;
+    overflow: hidden;
   }
   
   .livro-card:hover .resumo {
     opacity: 1;
+  }
+  
+  /* Animação de digitação */
+  .livro-card:hover .resumo p {
+    font-family: 'Courier New', Courier, monospace;
+    white-space: nowrap; /* Impede quebra de linha */
+    overflow: hidden; /* Oculta texto não revelado */
+    border-right: 2px solid var(--card-background); /* Cursor de digitação */
+    animation: typing 3s steps(30, end), blink 0.7s step-end infinite;
+  }
+  
+  /* Reinicia a animação sempre que o mouse passa por cima */
+  .livro-card .resumo p {
+    animation: none;
+  }
+  
+  .livro-card:hover .resumo p {
+    animation: typing 3s steps(30, end), blink 0.7s step-end infinite;
+  }
+  
+  /* Keyframes para digitação */
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  
+  /* Keyframes para o cursor piscando */
+  @keyframes blink {
+    from {
+      border-color: transparent;
+    }
+    to {
+      border-color: var(--card-background);
+    }
   }
   
   /* Cabeçalho */
