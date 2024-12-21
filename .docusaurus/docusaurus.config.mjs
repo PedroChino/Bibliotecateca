@@ -4,19 +4,20 @@
  * Modify the docusaurus.config.js file at your site's root instead.
  */
 export default {
-  "title": "My Site",
+  "title": "My Test Site",
   "tagline": "Dinosaurs are cool",
   "favicon": "img/favicon.ico",
-  "url": "https://your-docusaurus-test-site.com",
-  "baseUrl": "/",
-  "organizationName": "facebook",
-  "projectName": "docusaurus",
+  "url": "https://github.com",
+  "baseUrl": "/Bibliotecateca/",
+  "organizationName": "PedroChino",
+  "projectName": "Bibliotecateca",
+  "deploymentBranch": "gh-pages",
   "onBrokenLinks": "throw",
   "onBrokenMarkdownLinks": "warn",
   "i18n": {
-    "defaultLocale": "en",
+    "defaultLocale": "pt",
     "locales": [
-      "en"
+      "pt"
     ],
     "path": "i18n",
     "localeConfigs": {}
@@ -26,7 +27,7 @@ export default {
       "classic",
       {
         "docs": {
-          "sidebarPath": "/home/masaleiro/Code/UAlg/docusaurus-ghpages/sidebars.js",
+          "sidebarPath": "C:\\Users\\Pedro\\Desktop\\Bibliotecateca\\Bibliotecateca\\sidebars.js",
           "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/"
         },
         "blog": {
@@ -34,7 +35,7 @@ export default {
           "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/"
         },
         "theme": {
-          "customCss": "/home/masaleiro/Code/UAlg/docusaurus-ghpages/src/css/custom.css"
+          "customCss": "C:\\Users\\Pedro\\Desktop\\Bibliotecateca\\Bibliotecateca\\src\\css\\custom.css"
         }
       }
     ]
@@ -110,7 +111,7 @@ export default {
           ]
         }
       ],
-      "copyright": "Copyright © 2023 My Project, Inc. Built with Docusaurus."
+      "copyright": "Copyright © 2024 My Project, Inc. Built with Docusaurus."
     },
     "prism": {
       "theme": {

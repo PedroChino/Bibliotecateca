@@ -1,0 +1,15 @@
+{
+  "title": "Tutorial - Extras",
+  "slug": "/category/tutorial---extras",
+  "permalink": "/Bibliotecateca/docs/category/tutorial---extras",
+  "navigation": {
+    "previous": {
+      "title": "Congratulations!",
+      "permalink": "/Bibliotecateca/docs/tutorial-basics/congratulations"
+    },
+    "next": {
+      "title": "Manage Docs Versions",
+      "permalink": "/Bibliotecateca/docs/tutorial-extras/manage-docs-versions"
+    }
+  }
+}
