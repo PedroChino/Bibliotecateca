@@ -1,4 +1,4 @@
-/* Paleta de cores */
+/* Paleta de cores para o modo claro */
 :root {
   --background-color: #f7f7f7;
   --primary-color: #d9c2a6;
@@ -7,6 +7,17 @@
   --highlight-color: #704c32;
   --card-background: #ffffff;
   --overlay-background: rgba(166, 124, 82, 0.85); /* Fundo do overlay */
+}
+
+/* Paleta de cores para o modo escuro */
+:root[data-theme='dark'] {
+  --background-color: #1e1e1e;
+  --primary-color: #8a6f47;
+  --secondary-color: #624a2d;
+  --text-color: #e4e4e4;
+  --highlight-color: #b98d68;
+  --card-background: #2a2a2a;
+  --overlay-background: rgba(98, 74, 45, 0.85);
 }
 
 /* Corpo principal */
@@ -30,6 +41,7 @@ body {
   margin-top: 2rem;
 }
 
+/* Cartão de livro */
 .livro-card {
   position: relative;
   overflow: hidden;
@@ -135,17 +147,40 @@ body {
 
 /* Conteúdo do Modal */
 .modal-content {
-  position: relative;
-  background-color: var(--card-background); /* Fundo branco */
+  position: relative; /* Necessário para o posicionamento do botão */
+  background-color: var(--card-background);
   color: var(--text-color);
-  padding: 2rem;
-  border-radius: 16px; /* Bordas arredondadas */
-  border: 2px solid var(--primary-color); /* Borda sutil */
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Sombra profunda */
+  padding: 2rem 2rem 4rem; /* Mais espaço embaixo para acomodar o botão */
+  border-radius: 16px;
+  border: 2px solid var(--primary-color);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
   text-align: center;
-  max-width: 600px; /* Largura máxima */
+  max-width: 600px;
   width: 90%;
-  animation: fadeIn 0.4s ease-out; /* Animação de entrada */
+  animation: fadeIn 0.4s ease-out;
+}
+
+/* Botão Fechar */
+.close-modal-button {
+  padding: 0.7rem 1.5rem;
+  background-color: var(--primary-color);
+  color: var(--card-background);
+  border: 2px solid var(--secondary-color);
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: all 0.3s ease; /* Transição suave no botão */
+  position: relative; /* Posicionado em relação ao modal */
+  margin: 1.5rem auto 0; /* Espaçamento em cima e centralização horizontal */
+  display: block; /* Centraliza horizontalmente */
+  text-align: center; /* Centraliza o texto dentro do botão */
+}
+
+.close-modal-button:hover {
+  background-color: var(--secondary-color); /* Fundo muda ao passar o mouse */
+  color: var(--card-background);
+  border-color: var(--highlight-color);
 }
 
 /* Animação do modal */
@@ -160,38 +195,19 @@ body {
   }
 }
 
-/* Título do Modal */
-.modal-content h2 {
-  font-size: 1.8rem;
-  margin-bottom: 1rem;
-  color: var(--highlight-color);
-  border-bottom: 2px solid var(--primary-color); /* Linha abaixo do título */
-  padding-bottom: 0.5rem;
-}
+/* Responsividade */
+@media (max-width: 768px) {
+  .livros-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 colunas em tablets */
+  }
 
-/* Texto do Modal */
-.modal-content p {
-  margin-bottom: 1.5rem;
-  line-height: 1.6;
-  font-size: 1.2rem;
-  text-align: justify;
-}
+  .modal-content {
+    padding: 1.5rem;
+    font-size: 1rem;
+  }
 
-/* Botão Fechar */
-.close-modal-button {
-  padding: 0.7rem 1.5rem;
-  background-color: var(--primary-color);
-  color: var(--card-background);
-  border: 2px solid var(--secondary-color);
-  border-radius: 8px;
-  cursor: pointer;
-  font-size: 1rem;
-  font-weight: bold;
-  transition: all 0.3s ease; /* Transição suave no botão */
-}
-
-.close-modal-button:hover {
-  background-color: var(--secondary-color); /* Fundo muda ao passar o mouse */
-  color: var(--card-background);
-  border-color: var(--highlight-color);
+  .close-modal-button {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
 }
