@@ -1,11 +1,12 @@
 /* Paleta de cores */
 :root {
-    --background-color: #F7F7F7; /* Fundo cinza claro */
-    --primary-color: #D9C2A6; /* Marrom bege */
-    --secondary-color: #A67C52; /* Marrom claro */
-    --text-color: #8C6B48; /* Marrom médio */
-    --highlight-color: #704C32; /* Marrom escuro */
-    --card-background: #FFFFFF; /* Fundo branco dos cards */
+    --background-color: #f7f7f7;
+    --primary-color: #d9c2a6;
+    --secondary-color: #a67c52;
+    --text-color: #8c6b48;
+    --highlight-color: #704c32;
+    --card-background: #ffffff;
+    --overlay-background: rgba(166, 124, 82, 0.85); /* Fundo do overlay */
   }
   
   /* Corpo principal */
@@ -19,19 +20,16 @@
   .biblioteca-container {
     padding: 2rem;
     text-align: center;
-    background-color: var(--background-color);
-    color: var(--text-color);
   }
   
   /* Grade de livros */
   .livros-grid {
     display: grid;
-    grid-template-columns: repeat(5, 1fr); /* 5 colunas */
-    gap: 1.5rem; /* Espaçamento entre os itens */
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1.5rem;
     margin-top: 2rem;
   }
   
-  /* Estilização dos cards */
   .livro-card {
     position: relative;
     overflow: hidden;
@@ -40,6 +38,7 @@
     border: 1px solid var(--primary-color);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
   }
   
   .livro-card img {
@@ -47,55 +46,49 @@
     height: auto;
     display: block;
     border-radius: 8px;
+    transition: transform 0.3s ease;
+  }
+  
+  .livro-card:hover img {
+    transform: scale(1.1); /* Efeito de zoom */
   }
   
   .livro-card:hover {
-    transform: scale(1.05);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
   }
   
-  /* Texto do resumo */
-  .livro-card .resumo {
+  /* Overlay com cor */
+  .overlay {
     position: absolute;
-    bottom: 0;
+    top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(166, 124, 82, 0.85); /* Marrom claro com opacidade */
+    background-color: var(--overlay-background);
     color: var(--card-background);
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    font-size: 1rem;
-    padding: 1rem;
-    box-sizing: border-box;
-    border-radius: 8px;
     opacity: 0;
     transition: opacity 0.3s ease;
-    overflow: hidden;
+    text-align: center;
   }
   
-  .livro-card:hover .resumo {
-    opacity: 1;
+  .livro-card:hover .overlay {
+    opacity: 1; /* Exibe o overlay ao passar o mouse */
   }
   
   /* Animação de digitação */
-  .livro-card:hover .resumo p {
+  .typing {
     font-family: 'Courier New', Courier, monospace;
-    white-space: nowrap; /* Impede quebra de linha */
-    overflow: hidden; /* Oculta texto não revelado */
-    border-right: 2px solid var(--card-background); /* Cursor de digitação */
-    animation: typing 3s steps(30, end), blink 0.7s step-end infinite;
+    white-space: nowrap; /* Não quebra linha */
+    overflow: hidden; /* Esconde texto extra */
+    border-right: 2px solid var(--card-background); /* Cursor piscando */
+    animation: none; /* Reseta a animação por padrão */
   }
   
-  /* Reinicia a animação sempre que o mouse passa por cima */
-  .livro-card .resumo p {
-    animation: none;
-  }
-  
-  .livro-card:hover .resumo p {
-    animation: typing 3s steps(30, end), blink 0.7s step-end infinite;
+  .livro-card:hover .typing {
+    animation: typing 4s steps(30, end), blink 0.7s step-end infinite;
   }
   
   /* Keyframes para digitação */
@@ -104,11 +97,11 @@
       width: 0;
     }
     to {
-      width: 100%;
+      width: 100%; /* Revela o texto, uma letra de cada vez */
     }
   }
   
-  /* Keyframes para o cursor piscando */
+  /* Keyframes para cursor piscando */
   @keyframes blink {
     from {
       border-color: transparent;
@@ -118,29 +111,55 @@
     }
   }
   
-  /* Cabeçalho */
-  h1 {
-    color: var(--highlight-color);
-    font-size: 2.5rem;
+  /* Modal */
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modal-content {
+    background-color: var(--card-background);
+    color: var(--text-color);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    max-width: 500px;
+    width: 90%;
+  }
+  
+  .modal-content h2 {
+    font-size: 1.5rem;
     margin-bottom: 1rem;
+    color: var(--highlight-color);
   }
   
-  /* Responsividade */
-  @media (max-width: 1024px) {
-    .livros-grid {
-      grid-template-columns: repeat(3, 1fr);
-    }
+  .modal-content p {
+    margin-bottom: 1.5rem;
+    line-height: 1.5;
   }
   
-  @media (max-width: 768px) {
-    .livros-grid {
-      grid-template-columns: repeat(2, 1fr);
-    }
+  /* Botão Fechar */
+  .close-modal-button {
+    padding: 0.5rem 1rem;
+    background-color: var(--primary-color);
+    color: var(--card-background);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
   }
   
-  @media (max-width: 480px) {
-    .livros-grid {
-      grid-template-columns: 1fr;
-    }
+  .close-modal-button:hover {
+    background-color: var(--secondary-color);
   }
   
