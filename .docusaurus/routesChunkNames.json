@@ -2,64 +2,71 @@
   "/Bibliotecateca/__docusaurus/debug-0a1": {
     "__comp": "__comp---theme-debug-config-23-a-2ff",
     "__context": {
-      "plugin": "plugin---docusaurus-ghpages-docusaurus-debugf-68-fa2"
+      "plugin": "plugin---bibliotecateca-docusaurus-debugf-68-bc7"
     }
   },
   "/Bibliotecateca/__docusaurus/debug/config-af9": {
     "__comp": "__comp---theme-debug-config-23-a-2ff",
     "__context": {
-      "plugin": "plugin---docusaurus-ghpages-docusaurus-debugf-68-fa2"
+      "plugin": "plugin---bibliotecateca-docusaurus-debugf-68-bc7"
     }
   },
   "/Bibliotecateca/__docusaurus/debug/content-88f": {
     "__comp": "__comp---theme-debug-contentba-8-ce7",
     "__context": {
-      "plugin": "plugin---docusaurus-ghpages-docusaurus-debugf-68-fa2"
+      "plugin": "plugin---bibliotecateca-docusaurus-debugf-68-bc7"
     },
-    "allContent": "allContent---docusaurus-ghpages-docusaurus-debug-content-246-c70"
+    "allContent": "allContent---bibliotecateca-docusaurus-debug-content-246-490"
   },
   "/Bibliotecateca/__docusaurus/debug/globalData-87b": {
     "__comp": "__comp---theme-debug-global-dataede-0fa",
     "__context": {
-      "plugin": "plugin---docusaurus-ghpages-docusaurus-debugf-68-fa2"
+      "plugin": "plugin---bibliotecateca-docusaurus-debugf-68-bc7"
     }
   },
   "/Bibliotecateca/__docusaurus/debug/metadata-0b3": {
     "__comp": "__comp---theme-debug-site-metadata-68-e-3d4",
     "__context": {
-      "plugin": "plugin---docusaurus-ghpages-docusaurus-debugf-68-fa2"
+      "plugin": "plugin---bibliotecateca-docusaurus-debugf-68-bc7"
     }
   },
   "/Bibliotecateca/__docusaurus/debug/registry-f83": {
     "__comp": "__comp---theme-debug-registry-679-501",
     "__context": {
-      "plugin": "plugin---docusaurus-ghpages-docusaurus-debugf-68-fa2"
+      "plugin": "plugin---bibliotecateca-docusaurus-debugf-68-bc7"
     }
   },
   "/Bibliotecateca/__docusaurus/debug/routes-87b": {
     "__comp": "__comp---theme-debug-routes-946-699",
     "__context": {
-      "plugin": "plugin---docusaurus-ghpages-docusaurus-debugf-68-fa2"
+      "plugin": "plugin---bibliotecateca-docusaurus-debugf-68-bc7"
     }
+  },
+  "/Bibliotecateca/biblioteca-819": {
+    "__comp": "__comp---site-src-pages-biblioteca-tsx-0-f-2-73e",
+    "__context": {
+      "plugin": "plugin---bibliotecateca-markdown-page-5-eb-9cb"
+    },
+    "config": "config---bibliotecateca-5-e-9-e9c"
   },
   "/Bibliotecateca/blog-034": {
     "__comp": "__comp---theme-blog-list-pagea-6-a-7ba",
     "__context": {
-      "plugin": "plugin---docusaurus-ghpages-bloga-6-b-1d4"
+      "plugin": "plugin---bibliotecateca-bloga-6-b-3ef"
     },
-    "sidebar": "sidebar---docusaurus-ghpages-blog-814-8e9",
+    "sidebar": "sidebar---bibliotecateca-blog-814-fff",
     "items": [
       {
-        "content": "content---docusaurus-ghpages-blog-766-362"
+        "content": "content---bibliotecateca-blog-766-a64"
       },
       {
-        "content": "content---docusaurus-ghpages-blogf-4-f-573"
+        "content": "content---bibliotecateca-blogf-4-f-8b3"
       },
       {
-        "content": "content---docusaurus-ghpages-blog-871-b67"
+        "content": "content---bibliotecateca-blog-871-241"
       },
       {
-        "content": "content---docusaurus-ghpages-blog-925-da3"
+        "content": "content---bibliotecateca-blog-925-6c8"
       }
     ],
     "metadata": "metadata---bibliotecateca-blog-42-c-0ca"
@@ -67,60 +74,60 @@
   "/Bibliotecateca/blog/archive-419": {
     "__comp": "__comp---theme-blog-archive-page-9-e-4-1d8",
     "__context": {
-      "plugin": "plugin---docusaurus-ghpages-bloga-6-b-1d4"
+      "plugin": "plugin---bibliotecateca-bloga-6-b-3ef"
     },
     "archive": "archive---bibliotecateca-blog-archive-602-d70"
   },
   "/Bibliotecateca/blog/first-blog-post-bb5": {
     "__comp": "__comp---theme-blog-post-pageccc-cab",
     "__context": {
-      "plugin": "plugin---docusaurus-ghpages-bloga-6-b-1d4"
+      "plugin": "plugin---bibliotecateca-bloga-6-b-3ef"
     },
-    "sidebar": "sidebar---docusaurus-ghpages-blog-814-8e9",
-    "content": "content---docusaurus-ghpages-blog-first-blog-poste-27-c51"
+    "sidebar": "sidebar---bibliotecateca-blog-814-fff",
+    "content": "content---bibliotecateca-blog-first-blog-poste-27-79c"
   },
   "/Bibliotecateca/blog/long-blog-post-f02": {
     "__comp": "__comp---theme-blog-post-pageccc-cab",
     "__context": {
-      "plugin": "plugin---docusaurus-ghpages-bloga-6-b-1d4"
+      "plugin": "plugin---bibliotecateca-bloga-6-b-3ef"
     },
-    "sidebar": "sidebar---docusaurus-ghpages-blog-814-8e9",
-    "content": "content---docusaurus-ghpages-blog-long-blog-post-736-6c7"
+    "sidebar": "sidebar---bibliotecateca-blog-814-fff",
+    "content": "content---bibliotecateca-blog-long-blog-post-736-cee"
   },
   "/Bibliotecateca/blog/mdx-blog-post-3b9": {
     "__comp": "__comp---theme-blog-post-pageccc-cab",
     "__context": {
-      "plugin": "plugin---docusaurus-ghpages-bloga-6-b-1d4"
+      "plugin": "plugin---bibliotecateca-bloga-6-b-3ef"
     },
-    "sidebar": "sidebar---docusaurus-ghpages-blog-814-8e9",
-    "content": "content---docusaurus-ghpages-blog-mdx-blog-post-593-099"
+    "sidebar": "sidebar---bibliotecateca-blog-814-fff",
+    "content": "content---bibliotecateca-blog-mdx-blog-post-593-491"
   },
   "/Bibliotecateca/blog/tags-0ad": {
     "__comp": "__comp---theme-blog-tags-list-page-01-a-d0b",
     "__context": {
-      "plugin": "plugin---docusaurus-ghpages-bloga-6-b-1d4"
+      "plugin": "plugin---bibliotecateca-bloga-6-b-3ef"
     },
-    "sidebar": "sidebar---docusaurus-ghpages-blog-814-8e9",
+    "sidebar": "sidebar---bibliotecateca-blog-814-fff",
     "tags": "tags---bibliotecateca-blog-tags-727-c56"
   },
   "/Bibliotecateca/blog/tags/docusaurus-55e": {
     "__comp": "__comp---theme-blog-tags-posts-page-687-b6c",
     "__context": {
-      "plugin": "plugin---docusaurus-ghpages-bloga-6-b-1d4"
+      "plugin": "plugin---bibliotecateca-bloga-6-b-3ef"
     },
-    "sidebar": "sidebar---docusaurus-ghpages-blog-814-8e9",
+    "sidebar": "sidebar---bibliotecateca-blog-814-fff",
     "items": [
       {
-        "content": "content---docusaurus-ghpages-blog-766-362"
+        "content": "content---bibliotecateca-blog-766-a64"
       },
       {
-        "content": "content---docusaurus-ghpages-blogf-4-f-573"
+        "content": "content---bibliotecateca-blogf-4-f-8b3"
       },
       {
-        "content": "content---docusaurus-ghpages-blog-871-b67"
+        "content": "content---bibliotecateca-blog-871-241"
       },
       {
-        "content": "content---docusaurus-ghpages-blog-925-da3"
+        "content": "content---bibliotecateca-blog-925-6c8"
       }
     ],
     "tag": "tag---bibliotecateca-blog-tags-docusaurusf-1-a-029",
@@ -129,12 +136,12 @@
   "/Bibliotecateca/blog/tags/facebook-5e8": {
     "__comp": "__comp---theme-blog-tags-posts-page-687-b6c",
     "__context": {
-      "plugin": "plugin---docusaurus-ghpages-bloga-6-b-1d4"
+      "plugin": "plugin---bibliotecateca-bloga-6-b-3ef"
     },
-    "sidebar": "sidebar---docusaurus-ghpages-blog-814-8e9",
+    "sidebar": "sidebar---bibliotecateca-blog-814-fff",
     "items": [
       {
-        "content": "content---docusaurus-ghpages-blog-766-362"
+        "content": "content---bibliotecateca-blog-766-a64"
       }
     ],
     "tag": "tag---bibliotecateca-blog-tags-facebook-5-f-8-0f8",
@@ -143,15 +150,15 @@
   "/Bibliotecateca/blog/tags/hello-b48": {
     "__comp": "__comp---theme-blog-tags-posts-page-687-b6c",
     "__context": {
-      "plugin": "plugin---docusaurus-ghpages-bloga-6-b-1d4"
+      "plugin": "plugin---bibliotecateca-bloga-6-b-3ef"
     },
-    "sidebar": "sidebar---docusaurus-ghpages-blog-814-8e9",
+    "sidebar": "sidebar---bibliotecateca-blog-814-fff",
     "items": [
       {
-        "content": "content---docusaurus-ghpages-blog-766-362"
+        "content": "content---bibliotecateca-blog-766-a64"
       },
       {
-        "content": "content---docusaurus-ghpages-blog-871-b67"
+        "content": "content---bibliotecateca-blog-871-241"
       }
     ],
     "tag": "tag---bibliotecateca-blog-tags-helloc-76-c82",
@@ -160,12 +167,12 @@
   "/Bibliotecateca/blog/tags/hola-d76": {
     "__comp": "__comp---theme-blog-tags-posts-page-687-b6c",
     "__context": {
-      "plugin": "plugin---docusaurus-ghpages-bloga-6-b-1d4"
+      "plugin": "plugin---bibliotecateca-bloga-6-b-3ef"
     },
-    "sidebar": "sidebar---docusaurus-ghpages-blog-814-8e9",
+    "sidebar": "sidebar---bibliotecateca-blog-814-fff",
     "items": [
       {
-        "content": "content---docusaurus-ghpages-blog-925-da3"
+        "content": "content---bibliotecateca-blog-925-6c8"
       }
     ],
     "tag": "tag---bibliotecateca-blog-tags-hola-9-b-2-53c",
@@ -174,24 +181,24 @@
   "/Bibliotecateca/blog/welcome-fa1": {
     "__comp": "__comp---theme-blog-post-pageccc-cab",
     "__context": {
-      "plugin": "plugin---docusaurus-ghpages-bloga-6-b-1d4"
+      "plugin": "plugin---bibliotecateca-bloga-6-b-3ef"
     },
-    "sidebar": "sidebar---docusaurus-ghpages-blog-814-8e9",
-    "content": "content---docusaurus-ghpages-blog-welcomed-9-f-b2c"
+    "sidebar": "sidebar---bibliotecateca-blog-814-fff",
+    "content": "content---bibliotecateca-blog-welcomed-9-f-aab"
   },
   "/Bibliotecateca/markdown-page-9e7": {
     "__comp": "__comp---theme-mdx-page-1-f-3-b90",
     "__context": {
-      "plugin": "plugin---docusaurus-ghpages-markdown-page-5-eb-2a8"
+      "plugin": "plugin---bibliotecateca-markdown-page-5-eb-9cb"
     },
-    "content": "content---docusaurus-ghpages-markdown-page-393-e2e"
+    "content": "content---bibliotecateca-markdown-page-393-3cc"
   },
   "/Bibliotecateca/docs-2ed": {
     "__comp": "__comp---theme-doc-page-1-be-9be",
     "__context": {
-      "plugin": "plugin---docusaurus-ghpages-docs-635-4f0"
+      "plugin": "plugin---bibliotecateca-docs-635-8a8"
     },
-    "versionMetadata": "versionMetadata---docusaurus-ghpages-docs-935-6ff"
+    "versionMetadata": "versionMetadata---bibliotecateca-docs-935-705"
   },
   "/Bibliotecateca/docs/category/tutorial---basics-8ed": {
     "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
@@ -203,45 +210,45 @@
   },
   "/Bibliotecateca/docs/intro-074": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docusaurus-ghpages-docs-intro-0-e-3-2b8"
+    "content": "content---bibliotecateca-docs-intro-0-e-3-011"
   },
   "/Bibliotecateca/docs/tutorial-basics/congratulations-b7d": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docusaurus-ghpages-docs-tutorial-basics-congratulations-822-5a5"
+    "content": "content---bibliotecateca-docs-tutorial-basics-congratulations-822-b23"
   },
   "/Bibliotecateca/docs/tutorial-basics/create-a-blog-post-8f1": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docusaurus-ghpages-docs-tutorial-basics-create-a-blog-post-533-c0a"
+    "content": "content---bibliotecateca-docs-tutorial-basics-create-a-blog-post-533-24a"
   },
   "/Bibliotecateca/docs/tutorial-basics/create-a-document-0b8": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docusaurus-ghpages-docs-tutorial-basics-create-a-document-1-e-4-930"
+    "content": "content---bibliotecateca-docs-tutorial-basics-create-a-document-1-e-4-0ab"
   },
   "/Bibliotecateca/docs/tutorial-basics/create-a-page-d91": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docusaurus-ghpages-docs-tutorial-basics-create-a-page-5-c-8-af4"
+    "content": "content---bibliotecateca-docs-tutorial-basics-create-a-page-5-c-8-f32"
   },
   "/Bibliotecateca/docs/tutorial-basics/deploy-your-site-370": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docusaurus-ghpages-docs-tutorial-basics-deploy-your-sitef-55-907"
+    "content": "content---bibliotecateca-docs-tutorial-basics-deploy-your-sitef-55-934"
   },
   "/Bibliotecateca/docs/tutorial-basics/markdown-features-051": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docusaurus-ghpages-docs-tutorial-basics-markdown-features-18-c-75d"
+    "content": "content---bibliotecateca-docs-tutorial-basics-markdown-features-18-c-1f2"
   },
   "/Bibliotecateca/docs/tutorial-extras/manage-docs-versions-187": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docusaurus-ghpages-docs-tutorial-extras-manage-docs-versionsdff-b12"
+    "content": "content---bibliotecateca-docs-tutorial-extras-manage-docs-versionsdff-1b5"
   },
   "/Bibliotecateca/docs/tutorial-extras/translate-your-site-392": {
     "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docusaurus-ghpages-docs-tutorial-extras-translate-your-sitee-44-49d"
+    "content": "content---bibliotecateca-docs-tutorial-extras-translate-your-sitee-44-fbf"
   },
   "/Bibliotecateca/-ec5": {
     "__comp": "__comp---site-src-pages-index-tsx-1-df-d3e",
     "__context": {
-      "plugin": "plugin---docusaurus-ghpages-markdown-page-5-eb-2a8"
+      "plugin": "plugin---bibliotecateca-markdown-page-5-eb-9cb"
     },
-    "config": "config---docusaurus-ghpages-5-e-9-6c4"
+    "config": "config---bibliotecateca-5-e-9-e9c"
   }
 }
