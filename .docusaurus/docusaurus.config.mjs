@@ -4,15 +4,16 @@
  * Modify the docusaurus.config.js file at your site's root instead.
  */
 export default {
-  "title": "Bibliotecateca",
-  "tagline": "Um site incrível para organizar sua biblioteca",
-  "url": "https://pedrochino.github.io",
-  "baseUrl": "/Bibliotecateca/",
-  "onBrokenLinks": "throw",
-  "onBrokenMarkdownLinks": "warn",
+  "title": "My Test Site",
+  "tagline": "Dinosaurs are cool",
   "favicon": "img/favicon.ico",
+  "url": "https://github.com",
+  "baseUrl": "/Bibliotecateca/",
   "organizationName": "PedroChino",
   "projectName": "Bibliotecateca",
+  "deploymentBranch": "gh-pages",
+  "onBrokenLinks": "throw",
+  "onBrokenMarkdownLinks": "warn",
   "i18n": {
     "defaultLocale": "pt",
     "locales": [
@@ -27,11 +28,11 @@ export default {
       {
         "docs": {
           "sidebarPath": "C:\\Users\\Pedro\\Desktop\\Bibliotecateca\\Bibliotecateca\\sidebars.js",
-          "editUrl": "https://github.com/PedroChino/Bibliotecateca/edit/main/"
+          "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/"
         },
         "blog": {
           "showReadingTime": true,
-          "editUrl": "https://github.com/PedroChino/Bibliotecateca/edit/main/blog/"
+          "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/"
         },
         "theme": {
           "customCss": "C:\\Users\\Pedro\\Desktop\\Bibliotecateca\\Bibliotecateca\\src\\css\\custom.css"
@@ -40,17 +41,19 @@ export default {
     ]
   ],
   "themeConfig": {
+    "image": "img/docusaurus-social-card.jpg",
     "navbar": {
-      "title": "Bibliotecateca",
+      "title": "My Site",
       "logo": {
-        "alt": "Logo",
+        "alt": "My Site Logo",
         "src": "img/logo.svg"
       },
       "items": [
         {
-          "to": "/docs/intro",
-          "label": "Documentação",
-          "position": "left"
+          "type": "docSidebar",
+          "sidebarId": "tutorialSidebar",
+          "position": "left",
+          "label": "Tutorial"
         },
         {
           "to": "/blog",
@@ -58,12 +61,7 @@ export default {
           "position": "left"
         },
         {
-          "to": "/biblioteca",
-          "label": "Biblioteca",
-          "position": "left"
-        },
-        {
-          "href": "https://github.com/PedroChino/Bibliotecateca",
+          "href": "https://github.com/facebook/docusaurus",
           "label": "GitHub",
           "position": "right"
         }
@@ -74,34 +72,46 @@ export default {
       "style": "dark",
       "links": [
         {
-          "title": "Documentação",
+          "title": "Docs",
           "items": [
             {
-              "label": "Introdução",
+              "label": "Tutorial",
               "to": "/docs/intro"
             }
           ]
         },
         {
-          "title": "Comunidade",
+          "title": "Community",
           "items": [
             {
-              "label": "GitHub",
-              "href": "https://github.com/PedroChino/Bibliotecateca"
+              "label": "Stack Overflow",
+              "href": "https://stackoverflow.com/questions/tagged/docusaurus"
+            },
+            {
+              "label": "Discord",
+              "href": "https://discordapp.com/invite/docusaurus"
+            },
+            {
+              "label": "Twitter",
+              "href": "https://twitter.com/docusaurus"
             }
           ]
         },
         {
-          "title": "Mais",
+          "title": "More",
           "items": [
             {
               "label": "Blog",
               "to": "/blog"
+            },
+            {
+              "label": "GitHub",
+              "href": "https://github.com/facebook/docusaurus"
             }
           ]
         }
       ],
-      "copyright": "Copyright © 2024 Pedro Chino. Feito com Docusaurus."
+      "copyright": "Copyright © 2024 My Project, Inc. Built with Docusaurus."
     },
     "prism": {
       "theme": {

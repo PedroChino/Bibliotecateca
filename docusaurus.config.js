@@ -1,21 +1,33 @@
-// docusaurus.config.js
-
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
+const lightCodeTheme = require('prism-react-renderer/themes/github');
+const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+
+/** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Bibliotecateca',
-  tagline: 'Um site incrível para organizar sua biblioteca',
-  url: 'https://pedrochino.github.io',
-  baseUrl: '/Bibliotecateca/',
-  onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
+  title: 'My Test Site',
+  tagline: 'Dinosaurs are cool',
   favicon: 'img/favicon.ico',
 
-  // GitHub pages deployment config.
-  organizationName: 'PedroChino', // Seu nome de usuário ou organização no GitHub.
-  projectName: 'Bibliotecateca', // Nome do repositório no GitHub.
+  // Set the production url of your site here
+  url: 'https://github.com',
+  // Set the /<baseUrl>/ pathname under which your site is served
+  // For GitHub pages deployment, it is often '/<projectName>/'
+  baseUrl: '/Bibliotecateca/',
 
+  // GitHub pages deployment config.
+  // If you aren't using GitHub pages, you don't need these.
+  organizationName: 'PedroChino', // Usually your GitHub org/user name.
+  projectName: 'Bibliotecateca', // Usually your repo name.
+  deploymentBranch: 'gh-pages',
+
+  onBrokenLinks: 'throw',
+  onBrokenMarkdownLinks: 'warn',
+
+  // Even if you don't use internalization, you can use this field to set useful
+  // metadata like html lang. For example, if your site is Chinese, you may want
+  // to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'pt',
     locales: ['pt'],
@@ -28,13 +40,17 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
+          // Please change this to your repo.
+          // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/PedroChino/Bibliotecateca/edit/main/',
+            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         blog: {
           showReadingTime: true,
+          // Please change this to your repo.
+          // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/PedroChino/Bibliotecateca/edit/main/blog/',
+            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -46,18 +62,24 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      // Replace with your project's social card
+      image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: 'Bibliotecateca',
+        title: 'My Site',
         logo: {
-          alt: 'Logo',
+          alt: 'My Site Logo',
           src: 'img/logo.svg',
         },
         items: [
-          { to: '/docs/intro', label: 'Documentação', position: 'left' },
-          { to: '/blog', label: 'Blog', position: 'left' },
-          { to: '/biblioteca', label: 'Biblioteca', position: 'left' }, // Aba Biblioteca
           {
-            href: 'https://github.com/PedroChino/Bibliotecateca',
+            type: 'docSidebar',
+            sidebarId: 'tutorialSidebar',
+            position: 'left',
+            label: 'Tutorial',
+          },
+          {to: '/blog', label: 'Blog', position: 'left'},
+          {
+            href: 'https://github.com/facebook/docusaurus',
             label: 'GitHub',
             position: 'right',
           },
@@ -67,38 +89,50 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Documentação',
+            title: 'Docs',
             items: [
               {
-                label: 'Introdução',
+                label: 'Tutorial',
                 to: '/docs/intro',
               },
             ],
           },
           {
-            title: 'Comunidade',
+            title: 'Community',
             items: [
               {
-                label: 'GitHub',
-                href: 'https://github.com/PedroChino/Bibliotecateca',
+                label: 'Stack Overflow',
+                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+              },
+              {
+                label: 'Discord',
+                href: 'https://discordapp.com/invite/docusaurus',
+              },
+              {
+                label: 'Twitter',
+                href: 'https://twitter.com/docusaurus',
               },
             ],
           },
           {
-            title: 'Mais',
+            title: 'More',
             items: [
               {
                 label: 'Blog',
                 to: '/blog',
               },
+              {
+                label: 'GitHub',
+                href: 'https://github.com/facebook/docusaurus',
+              },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Pedro Chino. Feito com Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
       },
       prism: {
-        theme: require('prism-react-renderer/themes/github'),
-        darkTheme: require('prism-react-renderer/themes/dracula'),
+        theme: lightCodeTheme,
+        darkTheme: darkCodeTheme,
       },
     }),
 };
