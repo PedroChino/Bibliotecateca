@@ -45,9 +45,9 @@
   "/Bibliotecateca/Biblioteca-a6b": {
     "__comp": "__comp---site-src-pages-biblioteca-tsxc-11-452",
     "__context": {
-      "plugin": "plugin---bibliotecateca-biblioteca-5-eb-cac"
+      "plugin": "plugin---bibliotecateca-biblioteca-5-eb-6ae"
     },
-    "config": "config---bibliotecateca-biblioteca-5-e-9-8b5"
+    "config": "config---bibliotecateca-biblioteca-5-e-9-970"
   },
   "/Bibliotecateca/blog-034": {
     "__comp": "__comp---theme-blog-list-pagea-6-a-7ba",
@@ -189,7 +189,7 @@
   "/Bibliotecateca/markdown-page-9e7": {
     "__comp": "__comp---theme-mdx-page-1-f-3-b90",
     "__context": {
-      "plugin": "plugin---bibliotecateca-biblioteca-5-eb-cac"
+      "plugin": "plugin---bibliotecateca-biblioteca-5-eb-6ae"
     },
     "content": "content---bibliotecateca-markdown-page-393-3cc"
   },
@@ -247,8 +247,8 @@
   "/Bibliotecateca/-ec5": {
     "__comp": "__comp---site-src-pages-index-tsx-1-df-d3e",
     "__context": {
-      "plugin": "plugin---bibliotecateca-biblioteca-5-eb-cac"
+      "plugin": "plugin---bibliotecateca-biblioteca-5-eb-6ae"
     },
-    "config": "config---bibliotecateca-biblioteca-5-e-9-8b5"
+    "config": "config---bibliotecateca-biblioteca-5-e-9-970"
   }
 }
