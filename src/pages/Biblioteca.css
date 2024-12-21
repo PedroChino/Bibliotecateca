@@ -3,77 +3,99 @@
   --background-color: #f7f7f7;
   --primary-color: #d9c2a6;
   --secondary-color: #a67c52;
-  --text-color: #8c6b48;
+  --text-color: #4d4d4d;
   --highlight-color: #704c32;
   --card-background: #ffffff;
-  --overlay-background: rgba(166, 124, 82, 0.85); /* Fundo do overlay */
+  --overlay-background: rgba(166, 124, 82, 0.85);
 }
 
 /* Paleta de cores para o modo escuro */
 :root[data-theme='dark'] {
-  --background-color: #1e1e1e;
+  --background-color: #121212; /* Fundo escuro */
   --primary-color: #8a6f47;
   --secondary-color: #624a2d;
-  --text-color: #e4e4e4;
+  --text-color: #e4e4e4; /* Texto claro */
   --highlight-color: #b98d68;
-  --card-background: #2a2a2a;
-  --overlay-background: rgba(98, 74, 45, 0.85);
+  --card-background: #1e1e1e; /* Fundo dos cartões */
+  --overlay-background: rgba(98, 74, 45, 0.85); /* Fundo do overlay */
 }
 
-/* Corpo principal */
+/* Fundo com gradiente */
 body {
-  background-color: var(--background-color);
+  background: var(--background-color);
   color: var(--text-color);
   font-family: 'Arial', sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Título principal */
+.biblioteca-container h1 {
+  font-size: 2.5rem;
+  color: var(--highlight-color);
+  text-align: center;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.biblioteca-container h1::after {
+  content: '';
+  display: block;
+  width: 100px;
+  height: 4px;
+  background: var(--secondary-color);
+  margin: 0.5rem auto;
+  border-radius: 2px;
 }
 
 /* Contêiner principal */
 .biblioteca-container {
   padding: 2rem;
-  text-align: center;
+  margin: 0 auto;
+  overflow: hidden; /* Garante que não há elementos vazando */
 }
 
 /* Grade de livros */
 .livros-grid {
   display: grid;
-  grid-template-columns: repeat(5, 1fr); /* 5 colunas por padrão */
-  gap: 1.5rem; /* Espaçamento entre os itens */
-  margin-top: 2rem;
+  grid-template-columns: repeat(5, 1fr); /* 5 colunas */
+  gap: 2rem; /* Espaçamento entre os itens */
+  padding: 1rem 2rem; /* Ajuste para centralizar a grade */
+  margin: 0 auto; /* Remove margens desnecessárias */
 }
 
-/* Cartão de livro */
+/* Cartões de livros */
 .livro-card {
   position: relative;
   overflow: hidden;
-  border-radius: 8px;
+  border-radius: 10px;
   background-color: var(--card-background);
   border: 1px solid var(--primary-color);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  aspect-ratio: 3 / 4; /* Mantém proporção de imagem */
-}
-
-.livro-card img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* Ajusta as imagens sem distorcer */
-  border-radius: 8px;
-  transition: transform 0.3s ease;
-}
-
-.livro-card:hover img {
-  transform: scale(1.1); /* Efeito de zoom */
+  margin-bottom: 0; /* Remove margens extras */
 }
 
 .livro-card:hover {
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px); /* Elevação ao passar o mouse */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-/* Overlay com cor */
+/* Imagens dentro dos cartões */
+.livro-card img {
+  width: 100%;
+  height: auto;
+  display: block; /* Remove espaçamento adicional de imagens inline */
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+  margin: 0; /* Garante que não há margens extras */
+}
+
+.livro-card:hover img {
+  transform: scale(1.05); /* Zoom na imagem */
+}
+
+/* Texto dentro do overlay */
 .overlay {
   position: absolute;
   top: 0;
@@ -86,37 +108,35 @@ body {
   justify-content: center;
   align-items: center;
   opacity: 0;
-  transition: opacity 0.3s ease;
-  text-align: center;
-  padding: 0.5rem;
+  transition: opacity 0.3s ease-in-out;
 }
 
 .livro-card:hover .overlay {
-  opacity: 1; /* Exibe o overlay ao passar o mouse */
+  opacity: 1;
 }
 
 /* Texto com Animação de Digitação */
 .typing {
   font-family: 'Courier New', Courier, monospace;
-  white-space: nowrap; /* Não quebra linha */
-  overflow: hidden; /* Esconde texto extra */
-  border-right: 2px solid var(--card-background); /* Cursor piscante */
-  animation: none; /* Reseta a animação por padrão */
-  color: var(--card-background); /* Cor do texto */
-  font-size: 1.2rem; /* Tamanho do texto */
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid var(--card-background);
+  animation: none;
+  color: var(--card-background);
+  font-size: 1.2rem;
 }
 
 .livro-card:hover .typing {
-  animation: typing 4s steps(30, end), blink 0.7s step-end infinite; /* Animação suave */
+  animation: typing 4s steps(30, end), blink 0.7s step-end infinite;
 }
 
 /* Keyframes para Digitação */
 @keyframes typing {
   from {
-    width: 0; /* Começa com 0 */
+    width: 0;
   }
   to {
-    width: 100%; /* Revela todo o texto */
+    width: 100%;
   }
 }
 
@@ -137,20 +157,20 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.6); /* Fundo escuro com opacidade */
+  background-color: rgba(0, 0, 0, 0.6);
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 1000;
-  transition: background-color 0.3s ease; /* Transição suave no fundo */
+  transition: background-color 0.3s ease;
 }
 
 /* Conteúdo do Modal */
 .modal-content {
-  position: relative; /* Necessário para o posicionamento do botão */
+  position: relative;
   background-color: var(--card-background);
   color: var(--text-color);
-  padding: 2rem 2rem 4rem; /* Mais espaço embaixo para acomodar o botão */
+  padding: 2rem 2rem 4rem;
   border-radius: 16px;
   border: 2px solid var(--primary-color);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
@@ -170,15 +190,15 @@ body {
   cursor: pointer;
   font-size: 1rem;
   font-weight: bold;
-  transition: all 0.3s ease; /* Transição suave no botão */
-  position: relative; /* Posicionado em relação ao modal */
-  margin: 1.5rem auto 0; /* Espaçamento em cima e centralização horizontal */
-  display: block; /* Centraliza horizontalmente */
-  text-align: center; /* Centraliza o texto dentro do botão */
+  transition: all 0.3s ease;
+  position: relative;
+  margin: 1.5rem auto 0;
+  display: block;
+  text-align: center;
 }
 
 .close-modal-button:hover {
-  background-color: var(--secondary-color); /* Fundo muda ao passar o mouse */
+  background-color: var(--secondary-color);
   color: var(--card-background);
   border-color: var(--highlight-color);
 }
@@ -187,7 +207,7 @@ body {
 @keyframes fadeIn {
   from {
     opacity: 0;
-    transform: translateY(-20px); /* Modal sobe ao aparecer */
+    transform: translateY(-20px);
   }
   to {
     opacity: 1;
@@ -196,9 +216,15 @@ body {
 }
 
 /* Responsividade */
+@media (max-width: 1024px) {
+  .livros-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
 @media (max-width: 768px) {
   .livros-grid {
-    grid-template-columns: repeat(2, 1fr); /* 2 colunas em tablets */
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .modal-content {
@@ -209,5 +235,11 @@ body {
   .close-modal-button {
     padding: 0.5rem 1rem;
     font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .livros-grid {
+    grid-template-columns: 1fr;
   }
 }
