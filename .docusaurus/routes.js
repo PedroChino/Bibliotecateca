@@ -38,6 +38,11 @@ export default [
     exact: true
   },
   {
+    path: '/Bibliotecateca/Biblioteca',
+    component: ComponentCreator('/Bibliotecateca/Biblioteca', 'a6b'),
+    exact: true
+  },
+  {
     path: '/Bibliotecateca/blog',
     component: ComponentCreator('/Bibliotecateca/blog', '034'),
     exact: true
