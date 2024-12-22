@@ -114,43 +114,53 @@ body {
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
   text-align: center;
+  padding: 0.5rem; /* Espaço interno para o texto */
+  box-sizing: border-box; /* Inclui o padding no tamanho total */
+  word-wrap: break-word; /* Permite quebrar palavras longas */
+  overflow-wrap: break-word; /* Quebra o texto em palavras */
 }
 
 .livro-card:hover .overlay {
   opacity: 1; /* Mostra o overlay ao passar o mouse */
 }
 
-/* Texto com Animação de Digitação */
+/* Texto com Efeito de Digitação */
 .typing {
   font-family: 'Courier New', Courier, monospace;
-  white-space: nowrap;
-  overflow: hidden;
-  border-right: 2px solid var(--overlay-text-color);
-  animation: none;
-  color: var(--overlay-text-color);
-  font-size: 1.2rem;
+  white-space: nowrap; /* Não quebra linha durante o efeito */
+  overflow: hidden; /* Esconde o texto que ainda não foi "digitado" */
+  display: inline-block; /* Permite que o efeito de digitação funcione */
+  border-right: 2px solid var(--overlay-text-color); /* Cursor piscando */
+  animation: typing 4s steps(30, end), blink 0.7s step-end infinite;
+  color: var(--overlay-text-color); /* Cor do texto */
+  font-size: 1rem; /* Ajuste do tamanho do texto */
+  line-height: 1.2; /* Espaçamento entre linhas */
+  max-width: 90%; /* Limita a largura máxima para não ultrapassar os limites do cartão */
+  text-align: center; /* Centraliza o texto no overlay */
 }
 
 .livro-card:hover .typing {
-  animation: typing 4s steps(30, end), blink 0.7s step-end infinite;
+  animation: typing 4s steps(30, end), blink 0.7s step-end infinite; /* Restaura o efeito de digitação */
+  white-space: normal; /* Permite quebras de linha após o efeito */
 }
 
-/* Keyframes para Digitação */
+/* Animação de Digitação */
 @keyframes typing {
   from {
-    width: 0;
+    width: 0; /* Começa sem texto visível */
   }
   to {
-    width: 100%;
+    width: 100%; /* Mostra todo o texto */
   }
 }
 
+/* Animação do Cursor Piscando */
 @keyframes blink {
   from {
-    border-color: transparent;
+    border-color: transparent; /* Cursor invisível */
   }
   to {
-    border-color: var(--overlay-text-color);
+    border-color: var(--overlay-text-color); /* Cursor visível */
   }
 }
 
