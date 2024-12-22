@@ -6,8 +6,8 @@
   --text-color: #4d4d4d;
   --highlight-color: #704c32;
   --card-background: #ffffff;
-  --overlay-background: rgba(166, 124, 82, 0.85); /* Castanho restaurado */
-  --overlay-text-color: #ffffff; /* Cor do texto no overlay */
+  --overlay-background: rgba(166, 124, 82, 0.85);
+  --overlay-text-color: #ffffff;
 }
 
 /* Paleta de cores para o modo escuro */
@@ -18,8 +18,8 @@
   --text-color: #e4e4e4;
   --highlight-color: #b98d68;
   --card-background: #1e1e1e;
-  --overlay-background: rgba(98, 74, 45, 0.85); /* Castanho escuro para modo escuro */
-  --overlay-text-color: #e4e4e4; /* Texto no overlay para modo escuro */
+  --overlay-background: rgba(98, 74, 45, 0.85);
+  --overlay-text-color: #e4e4e4;
 }
 
 /* Fundo */
@@ -61,10 +61,9 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
   gap: 2rem;
-  justify-content: center; /* Centraliza horizontalmente */
-  align-items: center; /* Centraliza verticalmente */
+  justify-content: center;
+  align-items: center;
   padding: 1rem 2rem;
-  margin: 0 auto;
 }
 
 /* Cartões de livros */
@@ -76,9 +75,9 @@ body {
   border: 1px solid var(--secondary-color);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  width: 210px; /* Largura fixa */
-  height: 315px; /* Altura fixa */
-  margin: 0 auto; /* Centraliza o cartão dentro da grade */
+  width: 210px;
+  height: 315px;
+  margin: 0 auto;
 }
 
 .livro-card:hover {
@@ -88,79 +87,67 @@ body {
 
 /* Imagens dentro dos cartões */
 .livro-card img {
-  width: 100%; /* Preenche a largura do cartão */
-  height: 100%; /* Preenche a altura do cartão */
-  object-fit: cover; /* Ajusta a imagem para preencher o espaço sem distorcer */
-  border-radius: 12px; /* Bordas arredondadas */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
   transition: transform 0.3s ease;
 }
 
 .livro-card:hover img {
-  transform: scale(1.05); /* Zoom suave ao passar o mouse */
+  transform: scale(1.05);
 }
 
-/* Overlay com castanho restaurado */
+/* Overlay */
 .overlay {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: var(--overlay-background); /* Castanho restaurado */
-  color: var(--overlay-text-color); /* Cor do texto */
+  background-color: var(--overlay-background);
+  color: var(--overlay-text-color);
   display: flex;
   justify-content: center;
   align-items: center;
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
   text-align: center;
-  padding: 0.5rem; /* Espaço interno para o texto */
-  box-sizing: border-box; /* Inclui o padding no tamanho total */
-  word-wrap: break-word; /* Permite quebrar palavras longas */
-  overflow-wrap: break-word; /* Quebra o texto em palavras */
+  padding: 0.5rem;
+  box-sizing: border-box;
 }
 
 .livro-card:hover .overlay {
-  opacity: 1; /* Mostra o overlay ao passar o mouse */
+  opacity: 1;
 }
 
 /* Texto com Efeito de Digitação */
 .typing {
   font-family: 'Courier New', Courier, monospace;
-  white-space: nowrap; /* Não quebra linha durante o efeito */
-  overflow: hidden; /* Esconde o texto que ainda não foi "digitado" */
-  display: inline-block; /* Permite que o efeito de digitação funcione */
-  border-right: 2px solid var(--overlay-text-color); /* Cursor piscando */
-  animation: typing 4s steps(30, end), blink 0.7s step-end infinite;
-  color: var(--overlay-text-color); /* Cor do texto */
-  font-size: 1rem; /* Ajuste do tamanho do texto */
-  line-height: 1.2; /* Espaçamento entre linhas */
-  max-width: 90%; /* Limita a largura máxima para não ultrapassar os limites do cartão */
-  text-align: center; /* Centraliza o texto no overlay */
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+  animation: typing 4s steps(30, end);
+  color: var(--overlay-text-color);
+  font-size: 1rem;
+  line-height: 1.2;
+  max-width: 90%;
+  text-align: center;
 }
 
 .livro-card:hover .typing {
-  animation: typing 4s steps(30, end), blink 0.7s step-end infinite; /* Restaura o efeito de digitação */
-  white-space: normal; /* Permite quebras de linha após o efeito */
+  white-space: normal;
+  overflow-wrap: break-word;
+  animation: none;
 }
 
 /* Animação de Digitação */
 @keyframes typing {
   from {
-    width: 0; /* Começa sem texto visível */
+    width: 0;
   }
   to {
-    width: 100%; /* Mostra todo o texto */
-  }
-}
-
-/* Animação do Cursor Piscando */
-@keyframes blink {
-  from {
-    border-color: transparent; /* Cursor invisível */
-  }
-  to {
-    border-color: var(--overlay-text-color); /* Cursor visível */
+    width: 100%;
   }
 }
 
@@ -181,17 +168,53 @@ body {
   cursor: pointer;
   font-size: 0.9rem;
   transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
 }
 
 .filtro-botao:hover {
   background-color: var(--secondary-color);
   color: var(--card-background);
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
+/* Botão Ativo */
 .filtro-botao.ativo {
   background-color: var(--highlight-color);
   border-color: var(--highlight-color);
   color: var(--card-background);
+}
+
+/* Animação de Pulso */
+.filtro-botao:hover::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 200%;
+  height: 200%;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  animation: pulse 0.6s ease-out forwards;
+  z-index: 1;
+}
+
+.filtro-botao:hover {
+  z-index: 2;
+}
+
+/* Keyframes para Pulso */
+@keyframes pulse {
+  from {
+    transform: translate(-50%, -50%) scale(0);
+    opacity: 1;
+  }
+  to {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0;
+  }
 }
 
 /* Modal Overlay */
