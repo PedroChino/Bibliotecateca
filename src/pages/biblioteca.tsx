@@ -57,7 +57,7 @@ const Biblioteca: React.FC = () => {
   return (
     <Layout title="Biblioteca">
       <div className="biblioteca-container">
-        <h1>Bem-vindo à Biblioteca</h1>
+        <h1>Bem-vindo à Bibliotecateca</h1>
 
         {/* Filtros */}
         <div className="filtro-generos">
