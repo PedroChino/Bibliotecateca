@@ -18,7 +18,7 @@ function HomepageHeader() {
           <Link
             className={clsx('button button--lg', styles.filtroBotao)}
             to="/biblioteca">
-            ME LEVE PARA A PÁGINA DE BIBLIOTECA
+             CHECK THEM BOOCKS
           </Link>
         </div>
       </div>
