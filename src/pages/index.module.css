@@ -1,23 +1,47 @@
-/**
- * CSS files with the .module.css suffix will be treated as CSS modules
- * and scoped locally.
- */
+/* Paleta de cores baseada em castanhos */
+:root {
+  --background-color-index: #d9c2a6; /* Castanho claro para o fundo */
+  --text-color-index: #4d4d4d; /* Castanho escuro para o texto */
+  --highlight-color-index: #704c32; /* Castanho profundo para destaques */
+  --button-background: #a67c52; /* Castanho médio para o botão */
+  --button-hover: #704c32; /* Castanho profundo no hover */
+  --button-text-color: #ffffff; /* Texto branco no botão */
+}
 
-.heroBanner {
+/* Estilização do banner apenas no index */
+.heroBannerIndex {
   padding: 4rem 0;
   text-align: center;
-  position: relative;
-  overflow: hidden;
+  background-color: var(--background-color-index); /* Fundo castanho claro */
+  color: var(--text-color-index); /* Texto castanho escuro */
 }
 
-@media screen and (max-width: 996px) {
-  .heroBanner {
-    padding: 2rem;
-  }
+.biblioteca-container h1 {
+  font-size: 2.5rem;
+  color: var(--highlight-color-index); /* Destaque para o título */
+  text-align: center;
+  margin-bottom: 1.5rem;
 }
 
-.buttons {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.biblioteca-container p {
+  font-size: 1.2rem;
+  color: var(--text-color-index); /* Texto castanho escuro */
+  margin-bottom: 2rem;
+}
+
+/* Botão estilizado */
+.filtroBotao {
+  padding: 0.5rem 1rem;
+  background-color: var(--button-background); /* Fundo castanho médio */
+  color: var(--button-text-color); /* Texto branco */
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.filtroBotao:hover {
+  background-color: var(--button-hover); /* Fundo castanho profundo */
+  transform: scale(1.05);
 }
