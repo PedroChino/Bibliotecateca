@@ -4,107 +4,107 @@ import ComponentCreator from '@docusaurus/ComponentCreator';
 export default [
   {
     path: '/Bibliotecateca/__docusaurus/debug',
-    component: ComponentCreator('/Bibliotecateca/__docusaurus/debug', '0a1'),
+    component: ComponentCreator('/Bibliotecateca/__docusaurus/debug', '29f'),
     exact: true
   },
   {
     path: '/Bibliotecateca/__docusaurus/debug/config',
-    component: ComponentCreator('/Bibliotecateca/__docusaurus/debug/config', 'af9'),
+    component: ComponentCreator('/Bibliotecateca/__docusaurus/debug/config', '1a6'),
     exact: true
   },
   {
     path: '/Bibliotecateca/__docusaurus/debug/content',
-    component: ComponentCreator('/Bibliotecateca/__docusaurus/debug/content', '88f'),
+    component: ComponentCreator('/Bibliotecateca/__docusaurus/debug/content', 'f65'),
     exact: true
   },
   {
     path: '/Bibliotecateca/__docusaurus/debug/globalData',
-    component: ComponentCreator('/Bibliotecateca/__docusaurus/debug/globalData', '87b'),
+    component: ComponentCreator('/Bibliotecateca/__docusaurus/debug/globalData', '04b'),
     exact: true
   },
   {
     path: '/Bibliotecateca/__docusaurus/debug/metadata',
-    component: ComponentCreator('/Bibliotecateca/__docusaurus/debug/metadata', '0b3'),
+    component: ComponentCreator('/Bibliotecateca/__docusaurus/debug/metadata', 'f9d'),
     exact: true
   },
   {
     path: '/Bibliotecateca/__docusaurus/debug/registry',
-    component: ComponentCreator('/Bibliotecateca/__docusaurus/debug/registry', 'f83'),
+    component: ComponentCreator('/Bibliotecateca/__docusaurus/debug/registry', '63d'),
     exact: true
   },
   {
     path: '/Bibliotecateca/__docusaurus/debug/routes',
-    component: ComponentCreator('/Bibliotecateca/__docusaurus/debug/routes', '87b'),
+    component: ComponentCreator('/Bibliotecateca/__docusaurus/debug/routes', 'ab2'),
     exact: true
   },
   {
-    path: '/Bibliotecateca/Biblioteca',
-    component: ComponentCreator('/Bibliotecateca/Biblioteca', 'a6b'),
+    path: '/Bibliotecateca/biblioteca',
+    component: ComponentCreator('/Bibliotecateca/biblioteca', '0ab'),
     exact: true
   },
   {
     path: '/Bibliotecateca/blog',
-    component: ComponentCreator('/Bibliotecateca/blog', '034'),
+    component: ComponentCreator('/Bibliotecateca/blog', '6e4'),
     exact: true
   },
   {
     path: '/Bibliotecateca/blog/archive',
-    component: ComponentCreator('/Bibliotecateca/blog/archive', '419'),
+    component: ComponentCreator('/Bibliotecateca/blog/archive', 'eb4'),
     exact: true
   },
   {
     path: '/Bibliotecateca/blog/first-blog-post',
-    component: ComponentCreator('/Bibliotecateca/blog/first-blog-post', 'bb5'),
+    component: ComponentCreator('/Bibliotecateca/blog/first-blog-post', 'b19'),
     exact: true
   },
   {
     path: '/Bibliotecateca/blog/long-blog-post',
-    component: ComponentCreator('/Bibliotecateca/blog/long-blog-post', 'f02'),
+    component: ComponentCreator('/Bibliotecateca/blog/long-blog-post', '64d'),
     exact: true
   },
   {
     path: '/Bibliotecateca/blog/mdx-blog-post',
-    component: ComponentCreator('/Bibliotecateca/blog/mdx-blog-post', '3b9'),
+    component: ComponentCreator('/Bibliotecateca/blog/mdx-blog-post', '7f2'),
     exact: true
   },
   {
     path: '/Bibliotecateca/blog/tags',
-    component: ComponentCreator('/Bibliotecateca/blog/tags', '0ad'),
+    component: ComponentCreator('/Bibliotecateca/blog/tags', '65d'),
     exact: true
   },
   {
     path: '/Bibliotecateca/blog/tags/docusaurus',
-    component: ComponentCreator('/Bibliotecateca/blog/tags/docusaurus', '55e'),
+    component: ComponentCreator('/Bibliotecateca/blog/tags/docusaurus', '6b6'),
     exact: true
   },
   {
     path: '/Bibliotecateca/blog/tags/facebook',
-    component: ComponentCreator('/Bibliotecateca/blog/tags/facebook', '5e8'),
+    component: ComponentCreator('/Bibliotecateca/blog/tags/facebook', 'a9f'),
     exact: true
   },
   {
     path: '/Bibliotecateca/blog/tags/hello',
-    component: ComponentCreator('/Bibliotecateca/blog/tags/hello', 'b48'),
+    component: ComponentCreator('/Bibliotecateca/blog/tags/hello', 'b6b'),
     exact: true
   },
   {
     path: '/Bibliotecateca/blog/tags/hola',
-    component: ComponentCreator('/Bibliotecateca/blog/tags/hola', 'd76'),
+    component: ComponentCreator('/Bibliotecateca/blog/tags/hola', '56e'),
     exact: true
   },
   {
     path: '/Bibliotecateca/blog/welcome',
-    component: ComponentCreator('/Bibliotecateca/blog/welcome', 'fa1'),
+    component: ComponentCreator('/Bibliotecateca/blog/welcome', '6ae'),
     exact: true
   },
   {
     path: '/Bibliotecateca/markdown-page',
-    component: ComponentCreator('/Bibliotecateca/markdown-page', '9e7'),
+    component: ComponentCreator('/Bibliotecateca/markdown-page', 'd13'),
     exact: true
   },
   {
     path: '/Bibliotecateca/docs',
-    component: ComponentCreator('/Bibliotecateca/docs', '2ed'),
+    component: ComponentCreator('/Bibliotecateca/docs', '31d'),
     routes: [
       {
         path: '/Bibliotecateca/docs/category/tutorial---basics',
@@ -176,7 +176,7 @@ export default [
   },
   {
     path: '/Bibliotecateca/',
-    component: ComponentCreator('/Bibliotecateca/', 'ec5'),
+    component: ComponentCreator('/Bibliotecateca/', 'f1c'),
     exact: true
   },
   {
