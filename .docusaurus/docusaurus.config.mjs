@@ -44,7 +44,7 @@ export default {
       "title": "Bibliotecateca",
       "logo": {
         "alt": "Logo",
-        "src": "img/logo.svg"
+        "src": "img/logo.webp"
       },
       "items": [
         {
