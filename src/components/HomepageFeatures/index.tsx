@@ -10,32 +10,31 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Easy to Use',
+    title: 'Os Nosso Livros',
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Aprende sobre os nosso livros ao veres os cartavez dinamicos na pagina 
+        dos livros
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
+    title: 'Mentes Creativas',
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Inspirate em criar os teus proprios livros atravez das criações do nossos 
+        proficionais artisticos
       </>
     ),
   },
   {
-    title: 'Powered by React',
+    title: 'A Nossa Equipa',
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Aprende sobre a nossa equipa, o porque que desenvolve-mos este site as nossas motivações, etc
       </>
     ),
   },

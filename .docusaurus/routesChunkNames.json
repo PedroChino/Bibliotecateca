@@ -193,6 +193,13 @@
     },
     "content": "content---bibliotecateca-markdown-page-393-3cc"
   },
+  "/Bibliotecateca/SobreNos-dc7": {
+    "__comp": "__comp---site-src-pages-sobre-nos-tsx-246-298",
+    "__context": {
+      "plugin": "plugin---bibliotecateca-bibliotecaf-06-87f"
+    },
+    "config": "config---bibliotecateca-biblioteca-5-e-9-8b5"
+  },
   "/Bibliotecateca/docs-31d": {
     "__comp": "__comp---theme-doc-page-1-be-9be",
     "__context": {

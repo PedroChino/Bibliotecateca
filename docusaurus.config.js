@@ -3,7 +3,7 @@
 
 const config = {
   title: 'Bibliotecateca',
-  tagline: 'Um site incrível para organizar sua biblioteca',
+  tagline: 'Uma Biblioteca Ficticia',
   url: 'https://pedrochino.github.io',
   baseUrl: '/Bibliotecateca/',
   onBrokenLinks: 'throw',
@@ -51,9 +51,8 @@ const config = {
           src: 'img/logo.svg',
         },
         items: [
-          { to: '/docs/intro', label: 'Documentação', position: 'left' },
-          { to: '/blog', label: 'Blog', position: 'left' },
-          { to: '/biblioteca', label: 'Biblioteca', position: 'left' }, // Aba Biblioteca
+          { to: '/biblioteca', label: 'Biblioteca', position: 'left' },
+          { to: '/SobreNos', label: 'Sobre Nós', position: 'left' }, // Aba Biblioteca
           {
             href: 'https://github.com/PedroChino/Bibliotecateca',
             label: 'GitHub',

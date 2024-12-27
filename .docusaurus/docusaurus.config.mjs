@@ -5,7 +5,7 @@
  */
 export default {
   "title": "Bibliotecateca",
-  "tagline": "Um site incrível para organizar sua biblioteca",
+  "tagline": "Uma Biblioteca Ficticia",
   "url": "https://pedrochino.github.io",
   "baseUrl": "/Bibliotecateca/",
   "onBrokenLinks": "throw",
@@ -48,18 +48,13 @@ export default {
       },
       "items": [
         {
-          "to": "/docs/intro",
-          "label": "Documentação",
-          "position": "left"
-        },
-        {
-          "to": "/blog",
-          "label": "Blog",
-          "position": "left"
-        },
-        {
           "to": "/biblioteca",
           "label": "Biblioteca",
+          "position": "left"
+        },
+        {
+          "to": "/SobreNos",
+          "label": "Sobre Nós",
           "position": "left"
         },
         {

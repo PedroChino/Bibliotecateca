@@ -103,6 +103,11 @@ export default [
     exact: true
   },
   {
+    path: '/Bibliotecateca/SobreNos',
+    component: ComponentCreator('/Bibliotecateca/SobreNos', 'dc7'),
+    exact: true
+  },
+  {
     path: '/Bibliotecateca/docs',
     component: ComponentCreator('/Bibliotecateca/docs', '31d'),
     routes: [

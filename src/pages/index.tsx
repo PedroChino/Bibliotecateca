@@ -10,16 +10,15 @@ import styles from './index.module.css';
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
   return (
-    <header className={clsx('hero hero--primary', styles.heroBanner)}>
-      <div className="container">
-        <h1 className="hero__title">{siteConfig.title}</h1>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
-        <div className={styles.buttons}>
-          {/* Atualizado para redirecionar para a página de biblioteca */}
+    <header className={clsx(styles.heroBannerIndex)}>
+      <div className="biblioteca-container">
+        <h1>{siteConfig.title}</h1>
+        <p>{siteConfig.tagline}</p>
+        <div>
           <Link
-            className="button button--secondary button--lg"
+            className={clsx('button button--lg', styles.filtroBotao)}
             to="/biblioteca">
-            Check them books
+             CHECK THEM BOOCKS
           </Link>
         </div>
       </div>
