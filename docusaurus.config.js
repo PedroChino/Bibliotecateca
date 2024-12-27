@@ -48,7 +48,7 @@ const config = {
         title: 'Bibliotecateca',
         logo: {
           alt: 'Logo',
-          src: 'img/logo.webp',
+          src: 'img/logo.png',
         },
         items: [
           { to: '/biblioteca', label: 'Biblioteca', position: 'left' },
