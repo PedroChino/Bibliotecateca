@@ -691,6 +691,11 @@
         "frontMatter": {
           "title": "Markdown page example"
         }
+      },
+      {
+        "type": "jsx",
+        "permalink": "/Bibliotecateca/SobreNos",
+        "source": "@site/src/pages/SobreNos.tsx"
       }
     ]
   },

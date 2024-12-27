@@ -1,6 +1,7 @@
 export default {
   '__comp---site-src-pages-biblioteca-tsx-0-f-2-73e': [() => import(/* webpackChunkName: '__comp---site-src-pages-biblioteca-tsx-0-f-2-73e' */ '@site/src/pages/biblioteca.tsx'), '@site/src/pages/biblioteca.tsx', require.resolveWeak('@site/src/pages/biblioteca.tsx')],
   '__comp---site-src-pages-index-tsx-1-df-d3e': [() => import(/* webpackChunkName: '__comp---site-src-pages-index-tsx-1-df-d3e' */ '@site/src/pages/index.tsx'), '@site/src/pages/index.tsx', require.resolveWeak('@site/src/pages/index.tsx')],
+  '__comp---site-src-pages-sobre-nos-tsx-246-298': [() => import(/* webpackChunkName: '__comp---site-src-pages-sobre-nos-tsx-246-298' */ '@site/src/pages/SobreNos.tsx'), '@site/src/pages/SobreNos.tsx', require.resolveWeak('@site/src/pages/SobreNos.tsx')],
   '__comp---theme-blog-archive-page-9-e-4-1d8': [() => import(/* webpackChunkName: '__comp---theme-blog-archive-page-9-e-4-1d8' */ '@theme/BlogArchivePage'), '@theme/BlogArchivePage', require.resolveWeak('@theme/BlogArchivePage')],
   '__comp---theme-blog-list-pagea-6-a-7ba': [() => import(/* webpackChunkName: '__comp---theme-blog-list-pagea-6-a-7ba' */ '@theme/BlogListPage'), '@theme/BlogListPage', require.resolveWeak('@theme/BlogListPage')],
   '__comp---theme-blog-post-pageccc-cab': [() => import(/* webpackChunkName: '__comp---theme-blog-post-pageccc-cab' */ '@theme/BlogPostPage'), '@theme/BlogPostPage', require.resolveWeak('@theme/BlogPostPage')],
