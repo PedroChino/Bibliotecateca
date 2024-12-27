@@ -1,7 +1,8 @@
-/* Estilo principal */
+/* Container Principal */
 .sobreContainer {
     padding: 2rem;
     animation: fadeIn 1.5s ease-in;
+    background-color: #faf3e0; /* Fundo suave */
   }
   
   /* Hero Section */
@@ -11,69 +12,87 @@
   }
   
   .heroTitle {
-    font-size: 2.5rem;
+    font-size: 2.8rem;
     color: #704c32; /* Castanho profundo */
+    font-weight: bold;
     margin-bottom: 1rem;
   }
   
   .heroSubtitle {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     color: #4d4d4d; /* Castanho escuro */
   }
   
   /* Timeline Section */
   .timelineSection {
     margin-bottom: 3rem;
+    text-align: center; /* Centraliza o título e o conteúdo */
+  }
+  
+  .sectionTitle {
+    font-size: 2rem;
+    color: #704c32; /* Castanho profundo */
+    margin-bottom: 1.5rem;
+    font-weight: bold;
   }
   
   .timeline {
     display: flex;
     flex-direction: column;
+    align-items: center; /* Centraliza os itens horizontalmente */
     gap: 2rem;
-    position: relative;
   }
   
   .timelineItem {
     position: relative;
-    padding: 1rem;
-    background-color: #d9c2a6; /* Castanho claro */
-    border-radius: 8px;
+    padding: 1.5rem;
+    background-color: #f5d9b3; /* Tom vibrante */
+    border-radius: 12px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    animation: slideIn 1.2s ease-out;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 70%; /* Centraliza horizontalmente e limita a largura */
   }
   
-  .timelineContent {
+  .timelineItem:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .timelineContent h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #704c32;
+    font-weight: bold;
+  }
+  
+  .timelineContent p {
     font-size: 1rem;
     color: #4d4d4d;
-  }
-  
-  .timelineItem:nth-child(odd) {
-    align-self: flex-start;
-  }
-  
-  .timelineItem:nth-child(even) {
-    align-self: flex-end;
+    line-height: 1.5;
+    text-align: center; /* Centraliza o texto */
   }
   
   /* Valores Section */
   .valuesSection {
     margin-bottom: 3rem;
+    text-align: center; /* Centraliza o título e os cartões */
   }
   
   .valuesGrid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 1.5rem;
+    justify-content: center; /* Centraliza os cartões */
   }
   
   .valueCard {
-    background-color: #ffffff;
-    border: 2px solid #a67c52; /* Castanho médio */
     padding: 1.5rem;
-    text-align: center;
+    background-color: #ffffff;
+    border: 2px solid #a67c52;
     border-radius: 12px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
   }
   
   .valueCard:hover {
@@ -84,10 +103,12 @@
   .valueCard h3 {
     margin-bottom: 1rem;
     color: #704c32;
+    font-weight: bold;
   }
   
   .valueCard p {
     color: #4d4d4d;
+    line-height: 1.5;
   }
   
   /* Animações */
@@ -100,13 +121,8 @@
     }
   }
   
-  @keyframes slideIn {
-    from {
-      transform: translateY(20px);
-      opacity: 0;
-    }
-    to {
-      transform: translateY(0);
-      opacity: 1;
-    }
-  }
+  
+  
+  
+  
+ 
