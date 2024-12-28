@@ -21,7 +21,7 @@ const FeatureList: FeatureItem[] = [
   },
   {
     title: 'Mentes Creativas',
-    Svg: require('@site/static/img/index1.svg').default,
+    Svg: require('@site/static/img/index2.svg').default,
     description: (
       <>
         Inspirate em criar os teus proprios livros atravez das criações do nossos 
