@@ -11,7 +11,7 @@ type FeatureItem = {
 const FeatureList: FeatureItem[] = [
   {
     title: 'Os Nosso Livros',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    Svg: require('@site/static/img/index1.svg').default,
     description: (
       <>
         Aprende sobre os nosso livros ao veres os cartavez dinamicos na pagina 
@@ -21,7 +21,7 @@ const FeatureList: FeatureItem[] = [
   },
   {
     title: 'Mentes Creativas',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    Svg: require('@site/static/img/index1.svg').default,
     description: (
       <>
         Inspirate em criar os teus proprios livros atravez das criações do nossos 
@@ -31,7 +31,7 @@ const FeatureList: FeatureItem[] = [
   },
   {
     title: 'A Nossa Equipa',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    Svg: require('@site/static/img/index1.svg').default,
     description: (
       <>
         Aprende sobre a nossa equipa, o porque que desenvolve-mos este site as nossas motivações, etc
