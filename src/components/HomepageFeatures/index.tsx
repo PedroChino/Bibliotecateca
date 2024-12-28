@@ -31,7 +31,7 @@ const FeatureList: FeatureItem[] = [
   },
   {
     title: 'A Nossa Equipa',
-    Svg: require('@site/static/img/index1.svg').default,
+    Svg: require('@site/static/img/index3.svg').default,
     description: (
       <>
         Aprende sobre a nossa equipa, o porque que desenvolve-mos este site as nossas motivações, etc
