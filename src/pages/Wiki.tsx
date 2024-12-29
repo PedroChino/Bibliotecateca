@@ -36,6 +36,37 @@ export default function Wiki(): JSX.Element {
             <li>Uma seção de <strong>funcionalidades principais</strong> que explica os recursos disponíveis.</li>
           </ul>
         </section>
+
+        <section className={styles.contentSection} id="biblioteca">
+          <h2 className={styles.sectionTitle}>Biblioteca</h2>
+          <p>A aba <strong>Biblioteca</strong> é onde os usuários podem explorar e gerenciar o catálogo de livros.</p>
+          <ul>
+            <li><strong>Filtro por Gêneros</strong>: Permite que o usuário filtre os livros por categorias.</li>
+            <li><strong>Grade de Livros</strong>: Exibe os livros disponíveis com título, imagem e uma sobreposição interativa.</li>
+            <li><strong>Modal de Resumo</strong>: Abre um modal com o resumo da obra ao clicar em um livro.</li>
+          </ul>
+        </section>
+
+        <section className={styles.contentSection} id="sobre-nós">
+          <h2 className={styles.sectionTitle}>Sobre Nós</h2>
+          <p>A aba <strong>Sobre Nós</strong> apresenta informações sobre a história, os valores e a equipe do projeto.</p>
+        </section>
+
+        <section className={styles.contentSection} id="wiki">
+          <h2 className={styles.sectionTitle}>Wiki</h2>
+          <ul>
+            <li><strong>Gerenciar Livros</strong>: Ferramentas para adicionar, editar e remover livros do catálogo.</li>
+            <li><strong>Gerenciar Funcionários</strong>: Controle sobre os usuários administrativos do sistema.</li>
+          </ul>
+        </section>
+
+        <section className={styles.contentSection}>
+          <h2 className={styles.sectionTitle}>Referências e Recursos</h2>
+          <ul>
+            <li><a href="https://github.com/PedroChino/Bibliotecateca">Repositório no GitHub</a></li>
+            <li>Documentação técnica disponível no sistema.</li>
+          </ul>
+        </section>
       </main>
     </Layout>
   );
