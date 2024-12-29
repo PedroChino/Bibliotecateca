@@ -15,9 +15,9 @@
           "editUrlLocalized": "https://github.com/PedroChino/Bibliotecateca/edit/main/i18n/pt/docusaurus-plugin-content-docs/current",
           "isLast": true,
           "routePriority": -1,
-          "sidebarFilePath": "C:\\Users\\PPGas\\OneDrive\\Desktop\\Bibliotecateca\\Bibliotecateca\\sidebars.js",
-          "contentPath": "C:\\Users\\PPGas\\OneDrive\\Desktop\\Bibliotecateca\\Bibliotecateca\\docs",
-          "contentPathLocalized": "C:\\Users\\PPGas\\OneDrive\\Desktop\\Bibliotecateca\\Bibliotecateca\\i18n\\pt\\docusaurus-plugin-content-docs\\current",
+          "sidebarFilePath": "C:\\Users\\PPGas\\OneDrive\\Desktop\\TIMUR\\Bibliotecateca\\sidebars.js",
+          "contentPath": "C:\\Users\\PPGas\\OneDrive\\Desktop\\TIMUR\\Bibliotecateca\\docs",
+          "contentPathLocalized": "C:\\Users\\PPGas\\OneDrive\\Desktop\\TIMUR\\Bibliotecateca\\i18n\\pt\\docusaurus-plugin-content-docs\\current",
           "docs": [
             {
               "unversionedId": "intro",
@@ -696,6 +696,11 @@
         "type": "jsx",
         "permalink": "/Bibliotecateca/SobreNos",
         "source": "@site/src/pages/SobreNos.tsx"
+      },
+      {
+        "type": "jsx",
+        "permalink": "/Bibliotecateca/Wiki",
+        "source": "@site/src/pages/Wiki.tsx"
       }
     ]
   },

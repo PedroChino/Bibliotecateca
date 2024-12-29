@@ -1,0 +1,133 @@
+/* Container principal */
+.wikiContainer {
+    padding: 2rem;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    animation: fadeIn 1s ease-in-out;
+    text-align: center; /* Centraliza todo o texto */
+  }
+  
+  /* Animação de entrada */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Hero Section */
+  .heroSection {
+    text-align: center;
+    margin-bottom: 3rem;
+    padding: 2rem;
+    border-radius: 12px;
+    background-color: var(--card-background);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .title {
+    font-size: 3rem;
+    color: var(--highlight-color);
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .subtitle {
+    font-size: 1.4rem;
+    color: var(--text-color);
+    line-height: 1.6;
+  }
+  
+  /* Seções de Conteúdo */
+  .contentSection {
+    margin-bottom: 3rem;
+    padding: 1.5rem;
+    border-radius: 8px;
+    background-color: var(--card-background);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    text-align: center; /* Centraliza o texto */
+  }
+  
+  .contentSection:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .sectionTitle {
+    font-size: 2rem;
+    color: var(--highlight-color);
+    margin-bottom: 1rem;
+  }
+  
+  /* Listas */
+  ul, ol {
+    padding-left: 0;
+    margin-bottom: 1.5rem;
+    list-style-position: inside; /* Centraliza os marcadores */
+  }
+  
+  ul li, ol li {
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
+    color: var(--text-color);
+    text-align: center; /* Centraliza o texto dos itens */
+  }
+  
+  ul li a {
+    color: var(--highlight-color);
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Blocos de Código */
+  pre {
+    background-color: var(--card-background);
+    padding: 1rem;
+    border-radius: 8px;
+    overflow-x: auto;
+    border: 1px solid var(--secondary-color);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    text-align: center; /* Centraliza o conteúdo do código */
+  }
+  
+  code {
+    font-family: 'Courier New', monospace;
+    color: var(--highlight-color);
+    font-size: 0.9rem;
+  }
+  
+  /* Links */
+  a {
+    color: var(--highlight-color);
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    .title {
+      font-size: 2.4rem;
+    }
+  
+    .subtitle {
+      font-size: 1.2rem;
+    }
+  
+    .sectionTitle {
+      font-size: 1.8rem;
+    }
+  }
+  
