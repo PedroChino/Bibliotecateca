@@ -1,0 +1,81 @@
+/* Container principal */
+.wikiContainer {
+    padding: 2rem;
+    animation: fadeIn 1.5s ease-in;
+    background-color: var(--background-color); /* Dinâmico com tema */
+    color: var(--text-color);
+  }
+  
+  /* Seção Hero */
+  .heroSection {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  
+  .title {
+    font-size: 2.8rem;
+    color: var(--highlight-color); /* Destaque dinâmico */
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .subtitle {
+    font-size: 1.4rem;
+    color: var(--text-color);
+  }
+  
+  /* Seção de Conteúdo */
+  .contentSection {
+    margin-bottom: 3rem;
+  }
+  
+  .sectionTitle {
+    font-size: 2rem;
+    color: var(--highlight-color); /* Destaque dinâmico */
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+  }
+  
+  /* Grid de tópicos */
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .card {
+    padding: 1.5rem;
+    background-color: var(--card-background); /* Fundo dinâmico */
+    border: 2px solid var(--secondary-color);
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  .card h3 {
+    margin-bottom: 1rem;
+    color: var(--highlight-color);
+    font-weight: bold;
+  }
+  
+  .card p {
+    color: var(--text-color);
+    line-height: 1.5;
+  }
+  
+  /* Animações */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  

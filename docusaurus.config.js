@@ -53,7 +53,7 @@ const config = {
         items: [
           { to: '/biblioteca', label: 'Biblioteca', position: 'left' },
           { to: '/SobreNos', label: 'Sobre Nós', position: 'left' }, 
-          { to: '/Wiki', label: 'Wiki', position: 'left' },// Aba Biblioteca
+          { to: '/wiki', label: 'Wiki', position: 'left' },// Aba Biblioteca
           {
             href: 'https://github.com/PedroChino/Bibliotecateca',
             label: 'GitHub',

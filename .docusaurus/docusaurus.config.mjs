@@ -58,7 +58,7 @@ export default {
           "position": "left"
         },
         {
-          "to": "/Wiki",
+          "to": "/wiki",
           "label": "Wiki",
           "position": "left"
         },
