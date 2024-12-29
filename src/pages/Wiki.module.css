@@ -27,6 +27,7 @@
   /* Seção de Conteúdo */
   .contentSection {
     margin-bottom: 3rem;
+    text-align: center; /* Centraliza o título e o conteúdo */
   }
   
   .sectionTitle {
@@ -34,6 +35,7 @@
     color: var(--highlight-color); /* Destaque dinâmico */
     margin-bottom: 1.5rem;
     font-weight: bold;
+    text-align: center; /* Centraliza o título */
   }
   
   /* Grid de tópicos */
@@ -41,8 +43,11 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 1.5rem;
+    justify-content: center; /* Centraliza os cartões no grid */
+    align-items: center; /* Alinha os cartões verticalmente */
   }
   
+  /* Cartões */
   .card {
     padding: 1.5rem;
     background-color: var(--card-background); /* Fundo dinâmico */
