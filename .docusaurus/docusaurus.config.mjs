@@ -26,7 +26,7 @@ export default {
       "classic",
       {
         "docs": {
-          "sidebarPath": "C:\\Users\\PPGas\\OneDrive\\Desktop\\Bibliotecateca\\Bibliotecateca\\sidebars.js",
+          "sidebarPath": "C:\\Users\\PPGas\\OneDrive\\Desktop\\TIMUR\\Bibliotecateca\\sidebars.js",
           "editUrl": "https://github.com/PedroChino/Bibliotecateca/edit/main/"
         },
         "blog": {
@@ -34,7 +34,7 @@ export default {
           "editUrl": "https://github.com/PedroChino/Bibliotecateca/edit/main/blog/"
         },
         "theme": {
-          "customCss": "C:\\Users\\PPGas\\OneDrive\\Desktop\\Bibliotecateca\\Bibliotecateca\\src\\css\\custom.css"
+          "customCss": "C:\\Users\\PPGas\\OneDrive\\Desktop\\TIMUR\\Bibliotecateca\\src\\css\\custom.css"
         }
       }
     ]
@@ -55,6 +55,11 @@ export default {
         {
           "to": "/SobreNos",
           "label": "Sobre Nós",
+          "position": "left"
+        },
+        {
+          "to": "/Wiki",
+          "label": "Wiki",
           "position": "left"
         },
         {

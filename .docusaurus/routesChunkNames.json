@@ -1,58 +1,58 @@
 {
-  "/Bibliotecateca/__docusaurus/debug-29f": {
+  "/Bibliotecateca/__docusaurus/debug-2f1": {
     "__comp": "__comp---theme-debug-config-23-a-2ff",
     "__context": {
-      "plugin": "plugin---bibliotecateca-docusaurus-debug-2-e-3-60f"
+      "plugin": "plugin---bibliotecateca-docusaurus-debuge-50-e9b"
     }
   },
-  "/Bibliotecateca/__docusaurus/debug/config-1a6": {
+  "/Bibliotecateca/__docusaurus/debug/config-c3d": {
     "__comp": "__comp---theme-debug-config-23-a-2ff",
     "__context": {
-      "plugin": "plugin---bibliotecateca-docusaurus-debug-2-e-3-60f"
+      "plugin": "plugin---bibliotecateca-docusaurus-debuge-50-e9b"
     }
   },
-  "/Bibliotecateca/__docusaurus/debug/content-f65": {
+  "/Bibliotecateca/__docusaurus/debug/content-100": {
     "__comp": "__comp---theme-debug-contentba-8-ce7",
     "__context": {
-      "plugin": "plugin---bibliotecateca-docusaurus-debug-2-e-3-60f"
+      "plugin": "plugin---bibliotecateca-docusaurus-debuge-50-e9b"
     },
     "allContent": "allContent---bibliotecateca-docusaurus-debug-content-246-490"
   },
-  "/Bibliotecateca/__docusaurus/debug/globalData-04b": {
+  "/Bibliotecateca/__docusaurus/debug/globalData-620": {
     "__comp": "__comp---theme-debug-global-dataede-0fa",
     "__context": {
-      "plugin": "plugin---bibliotecateca-docusaurus-debug-2-e-3-60f"
+      "plugin": "plugin---bibliotecateca-docusaurus-debuge-50-e9b"
     }
   },
-  "/Bibliotecateca/__docusaurus/debug/metadata-f9d": {
+  "/Bibliotecateca/__docusaurus/debug/metadata-53e": {
     "__comp": "__comp---theme-debug-site-metadata-68-e-3d4",
     "__context": {
-      "plugin": "plugin---bibliotecateca-docusaurus-debug-2-e-3-60f"
+      "plugin": "plugin---bibliotecateca-docusaurus-debuge-50-e9b"
     }
   },
-  "/Bibliotecateca/__docusaurus/debug/registry-63d": {
+  "/Bibliotecateca/__docusaurus/debug/registry-b50": {
     "__comp": "__comp---theme-debug-registry-679-501",
     "__context": {
-      "plugin": "plugin---bibliotecateca-docusaurus-debug-2-e-3-60f"
+      "plugin": "plugin---bibliotecateca-docusaurus-debuge-50-e9b"
     }
   },
-  "/Bibliotecateca/__docusaurus/debug/routes-ab2": {
+  "/Bibliotecateca/__docusaurus/debug/routes-b1d": {
     "__comp": "__comp---theme-debug-routes-946-699",
     "__context": {
-      "plugin": "plugin---bibliotecateca-docusaurus-debug-2-e-3-60f"
+      "plugin": "plugin---bibliotecateca-docusaurus-debuge-50-e9b"
     }
   },
-  "/Bibliotecateca/biblioteca-0ab": {
+  "/Bibliotecateca/biblioteca-476": {
     "__comp": "__comp---site-src-pages-biblioteca-tsx-0-f-2-73e",
     "__context": {
-      "plugin": "plugin---bibliotecateca-bibliotecaf-06-87f"
+      "plugin": "plugin---bibliotecateca-bibliotecae-00-dbd"
     },
     "config": "config---bibliotecateca-biblioteca-5-e-9-8b5"
   },
-  "/Bibliotecateca/blog-6e4": {
+  "/Bibliotecateca/blog-76c": {
     "__comp": "__comp---theme-blog-list-pagea-6-a-7ba",
     "__context": {
-      "plugin": "plugin---bibliotecateca-blog-98-b-cea"
+      "plugin": "plugin---bibliotecateca-blog-7-b-9-d4d"
     },
     "sidebar": "sidebar---bibliotecateca-blog-814-fff",
     "items": [
@@ -71,49 +71,49 @@
     ],
     "metadata": "metadata---bibliotecateca-blog-42-c-0ca"
   },
-  "/Bibliotecateca/blog/archive-eb4": {
+  "/Bibliotecateca/blog/archive-d3f": {
     "__comp": "__comp---theme-blog-archive-page-9-e-4-1d8",
     "__context": {
-      "plugin": "plugin---bibliotecateca-blog-98-b-cea"
+      "plugin": "plugin---bibliotecateca-blog-7-b-9-d4d"
     },
     "archive": "archive---bibliotecateca-blog-archive-602-d70"
   },
-  "/Bibliotecateca/blog/first-blog-post-b19": {
+  "/Bibliotecateca/blog/first-blog-post-445": {
     "__comp": "__comp---theme-blog-post-pageccc-cab",
     "__context": {
-      "plugin": "plugin---bibliotecateca-blog-98-b-cea"
+      "plugin": "plugin---bibliotecateca-blog-7-b-9-d4d"
     },
     "sidebar": "sidebar---bibliotecateca-blog-814-fff",
     "content": "content---bibliotecateca-blog-first-blog-poste-27-79c"
   },
-  "/Bibliotecateca/blog/long-blog-post-64d": {
+  "/Bibliotecateca/blog/long-blog-post-11d": {
     "__comp": "__comp---theme-blog-post-pageccc-cab",
     "__context": {
-      "plugin": "plugin---bibliotecateca-blog-98-b-cea"
+      "plugin": "plugin---bibliotecateca-blog-7-b-9-d4d"
     },
     "sidebar": "sidebar---bibliotecateca-blog-814-fff",
     "content": "content---bibliotecateca-blog-long-blog-post-736-cee"
   },
-  "/Bibliotecateca/blog/mdx-blog-post-7f2": {
+  "/Bibliotecateca/blog/mdx-blog-post-ea0": {
     "__comp": "__comp---theme-blog-post-pageccc-cab",
     "__context": {
-      "plugin": "plugin---bibliotecateca-blog-98-b-cea"
+      "plugin": "plugin---bibliotecateca-blog-7-b-9-d4d"
     },
     "sidebar": "sidebar---bibliotecateca-blog-814-fff",
     "content": "content---bibliotecateca-blog-mdx-blog-post-593-491"
   },
-  "/Bibliotecateca/blog/tags-65d": {
+  "/Bibliotecateca/blog/tags-553": {
     "__comp": "__comp---theme-blog-tags-list-page-01-a-d0b",
     "__context": {
-      "plugin": "plugin---bibliotecateca-blog-98-b-cea"
+      "plugin": "plugin---bibliotecateca-blog-7-b-9-d4d"
     },
     "sidebar": "sidebar---bibliotecateca-blog-814-fff",
     "tags": "tags---bibliotecateca-blog-tags-727-c56"
   },
-  "/Bibliotecateca/blog/tags/docusaurus-6b6": {
+  "/Bibliotecateca/blog/tags/docusaurus-5f1": {
     "__comp": "__comp---theme-blog-tags-posts-page-687-b6c",
     "__context": {
-      "plugin": "plugin---bibliotecateca-blog-98-b-cea"
+      "plugin": "plugin---bibliotecateca-blog-7-b-9-d4d"
     },
     "sidebar": "sidebar---bibliotecateca-blog-814-fff",
     "items": [
@@ -133,10 +133,10 @@
     "tag": "tag---bibliotecateca-blog-tags-docusaurusf-1-a-029",
     "listMetadata": "listMetadata---bibliotecateca-blog-tags-docusaurus-3-f-8-55d"
   },
-  "/Bibliotecateca/blog/tags/facebook-a9f": {
+  "/Bibliotecateca/blog/tags/facebook-edb": {
     "__comp": "__comp---theme-blog-tags-posts-page-687-b6c",
     "__context": {
-      "plugin": "plugin---bibliotecateca-blog-98-b-cea"
+      "plugin": "plugin---bibliotecateca-blog-7-b-9-d4d"
     },
     "sidebar": "sidebar---bibliotecateca-blog-814-fff",
     "items": [
@@ -147,10 +147,10 @@
     "tag": "tag---bibliotecateca-blog-tags-facebook-5-f-8-0f8",
     "listMetadata": "listMetadata---bibliotecateca-blog-tags-facebook-57-b-0f6"
   },
-  "/Bibliotecateca/blog/tags/hello-b6b": {
+  "/Bibliotecateca/blog/tags/hello-fd7": {
     "__comp": "__comp---theme-blog-tags-posts-page-687-b6c",
     "__context": {
-      "plugin": "plugin---bibliotecateca-blog-98-b-cea"
+      "plugin": "plugin---bibliotecateca-blog-7-b-9-d4d"
     },
     "sidebar": "sidebar---bibliotecateca-blog-814-fff",
     "items": [
@@ -164,10 +164,10 @@
     "tag": "tag---bibliotecateca-blog-tags-helloc-76-c82",
     "listMetadata": "listMetadata---bibliotecateca-blog-tags-hello-7-ae-586"
   },
-  "/Bibliotecateca/blog/tags/hola-56e": {
+  "/Bibliotecateca/blog/tags/hola-933": {
     "__comp": "__comp---theme-blog-tags-posts-page-687-b6c",
     "__context": {
-      "plugin": "plugin---bibliotecateca-blog-98-b-cea"
+      "plugin": "plugin---bibliotecateca-blog-7-b-9-d4d"
     },
     "sidebar": "sidebar---bibliotecateca-blog-814-fff",
     "items": [
@@ -178,32 +178,39 @@
     "tag": "tag---bibliotecateca-blog-tags-hola-9-b-2-53c",
     "listMetadata": "listMetadata---bibliotecateca-blog-tags-holaa-3-f-bc8"
   },
-  "/Bibliotecateca/blog/welcome-6ae": {
+  "/Bibliotecateca/blog/welcome-b24": {
     "__comp": "__comp---theme-blog-post-pageccc-cab",
     "__context": {
-      "plugin": "plugin---bibliotecateca-blog-98-b-cea"
+      "plugin": "plugin---bibliotecateca-blog-7-b-9-d4d"
     },
     "sidebar": "sidebar---bibliotecateca-blog-814-fff",
     "content": "content---bibliotecateca-blog-welcomed-9-f-aab"
   },
-  "/Bibliotecateca/markdown-page-d13": {
+  "/Bibliotecateca/markdown-page-ff8": {
     "__comp": "__comp---theme-mdx-page-1-f-3-b90",
     "__context": {
-      "plugin": "plugin---bibliotecateca-bibliotecaf-06-87f"
+      "plugin": "plugin---bibliotecateca-bibliotecae-00-dbd"
     },
     "content": "content---bibliotecateca-markdown-page-393-3cc"
   },
-  "/Bibliotecateca/SobreNos-dc7": {
+  "/Bibliotecateca/SobreNos-563": {
     "__comp": "__comp---site-src-pages-sobre-nos-tsx-246-298",
     "__context": {
-      "plugin": "plugin---bibliotecateca-bibliotecaf-06-87f"
+      "plugin": "plugin---bibliotecateca-bibliotecae-00-dbd"
     },
     "config": "config---bibliotecateca-biblioteca-5-e-9-8b5"
   },
-  "/Bibliotecateca/docs-31d": {
+  "/Bibliotecateca/Wiki-e4e": {
+    "__comp": "__comp---site-src-pages-wiki-tsxde-2-48b",
+    "__context": {
+      "plugin": "plugin---bibliotecateca-bibliotecae-00-dbd"
+    },
+    "config": "config---bibliotecateca-biblioteca-5-e-9-8b5"
+  },
+  "/Bibliotecateca/docs-379": {
     "__comp": "__comp---theme-doc-page-1-be-9be",
     "__context": {
-      "plugin": "plugin---bibliotecateca-docsfe-7-b27"
+      "plugin": "plugin---bibliotecateca-docscdf-f84"
     },
     "versionMetadata": "versionMetadata---bibliotecateca-docs-935-705"
   },
@@ -251,10 +258,10 @@
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---bibliotecateca-docs-tutorial-extras-translate-your-sitee-44-fbf"
   },
-  "/Bibliotecateca/-f1c": {
+  "/Bibliotecateca/-1cf": {
     "__comp": "__comp---site-src-pages-index-tsx-1-df-d3e",
     "__context": {
-      "plugin": "plugin---bibliotecateca-bibliotecaf-06-87f"
+      "plugin": "plugin---bibliotecateca-bibliotecae-00-dbd"
     },
     "config": "config---bibliotecateca-biblioteca-5-e-9-8b5"
   }
