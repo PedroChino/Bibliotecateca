@@ -20,3 +20,26 @@
     color: var(--text-color);
   }
   
+  .contentSection {
+    margin-bottom: 3rem;
+  }
+  
+  .sectionTitle {
+    font-size: 2rem;
+    color: var(--highlight-color);
+    margin-bottom: 1rem;
+  }
+  
+  ul {
+    padding-left: 1.5rem;
+  }
+  
+  ul li {
+    margin-bottom: 0.5rem;
+  }
+  
+  code {
+    font-family: 'Courier New', monospace;
+    color: var(--highlight-color);
+  }
+  
